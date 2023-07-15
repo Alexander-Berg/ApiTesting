@@ -1,0 +1,24 @@
+
+Soap Request
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+  <soap:Body>
+    <GetWeatherByCityRequest xmlns="http://example.com/weather">
+      <CityName>New York</CityName>
+    </GetWeatherByCityRequest>
+  </soap:Body>
+</soap:Envelope>
+
+Soap Response
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+  <soap:Body>
+    <GetWeatherByCityResponse xmlns="http://example.com/weather">
+      <Temperature>25°C</Temperature>
+      <Humidity>60%</Humidity>
+      <WindSpeed>10 mph</WindSpeed>
+    </GetWeatherByCityResponse>
+  </soap:Body>
+</soap:Envelope>
+
+
